@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_background_color"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+
+        android:layout_marginBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_home" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/sweap_gradients"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/goto_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_shopping_bag_24"
+            android:layout_weight="1"
+            android:tint="#696969"
+            >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/gotoLiveCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="@color/baby_pink"
+            android:layout_weight="1"
+            >
+        </ImageButton>
+
+
+
+
+        <ImageButton
+            android:id="@+id/goto_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_weight="1"
+            android:tint="#696969"
+            >
+        </ImageButton>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/sweap_gradients"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pending_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:layout_weight="1"
+            android:textColor="@color/green_200"
+            android:text="Pending   orders"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_product"
+            android:text="add product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baby_pink"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirmed_orders"
+            android:text="Confirmed   orders"
+            android:textColor="@color/green_200"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:layout_weight="1"
+            >
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/add_extra_commission"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00000000"
+        android:src="@drawable/ic_baseline_attach_money_24"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_home"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="68dp"
+        android:paddingTop="6dp"
+        android:visibility="gone"
+        android:background="#00000000"
+        android:src="@drawable/ic_baseline_search_24"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_home"
+        app:layout_constraintVertical_bias="1.0">
+
+    </ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

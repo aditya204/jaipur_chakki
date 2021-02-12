@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Commission"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/extra_commison_et"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#E3E3E3"
+        android:layout_marginHorizontal="8dp"
+        android:hint="in ₹"
+        android:paddingStart="20dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:textColorHint="#696969"
+        android:inputType="number"
+
+        />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Details"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/user_details"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#E3E3E3"
+        android:layout_marginHorizontal="8dp"
+        android:hint="Details"
+        android:paddingStart="20dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:textColorHint="#696969"
+        android:inputType="textMultiLine"
+        />
+
+</LinearLayout>

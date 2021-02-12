@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quantum.myaata">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyAata">
+        <activity android:name=".AdminEditAddress"></activity>
+        <activity android:name=".UsersDetails" />
+        <activity android:name=".Search" />
+        <activity android:name=".AraeList" />
+        <activity android:name=".Area" />
+        <activity android:name=".Adapters.ExtraCommission" />
+        <activity android:name=".Users_list" />
+        <activity android:name=".AdminOrderProduct" />
+        <activity android:name=".AdminConfirmedOrder" />
+        <activity android:name=".AdminPendingOrders" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".Orders" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".Address" />
+        <activity android:name=".MyAddress" />
+        <activity android:name=".Cart" />
+        <activity android:name=".Home" />
+        <activity android:name=".Signup" />
+        <activity android:name=".VerifyPhone" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

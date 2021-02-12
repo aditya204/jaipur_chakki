@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300390402520",
+    "project_id": "my-aata-a139a",
+    "storage_bucket": "my-aata-a139a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300390402520:android:36feb84c260b7175578aad",
+        "android_client_info": {
+          "package_name": "com.quantum.myaata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300390402520-ebdvg99o70mih2elkfb8a5fobc5gi52c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2KRbK__RXXqUPa3zUbaDpHT5kgoc2nEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300390402520-ebdvg99o70mih2elkfb8a5fobc5gi52c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/grocery_cart_product_item_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:background="@drawable/corner_round_image"
+
+    android:layout_marginTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/grocery_cart_productImage"
+        android:layout_width="88dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/images"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+
+        android:id="@+id/grocery_cart_product_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="pickel 2(black)"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/grocery_cart_productDescription"
+        android:layout_width="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/grocery_cart_productImage"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_product_title"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_product_title" />
+
+    <TextView
+        android:id="@+id/grocery_cart_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="₹ 499 /-"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_productDescription"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_productDescription" />
+
+
+
+
+    <TextView
+        android:id="@+id/grocery_cart_productcommision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Commission per kg :- RS.3"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_productPrice"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_productPrice" />
+
+
+
+    <TextView
+        android:id="@+id/grocery_cart_out_of_stockTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:text="Out of stock"
+        android:visibility="gone"
+
+        android:textColor="#DF4444"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/grocery_cart_productImage"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_productImage"/>
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_product_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="37dp"
+        android:text="Add to cart"
+        android:visibility="visible"
+        android:textColor="#FFF"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/ic_shopping_cart_black_24dp"
+        android:background="@drawable/button_background"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_productcommision" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:id="@+id/goto_cart_product_btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="37dp"
+        android:text=" goto cart"
+        android:textColor="#FFF"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/ic_shopping_cart_black_24dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#5CDEFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grocery_cart_productcommision" />
+</androidx.constraintlayout.widget.ConstraintLayout>

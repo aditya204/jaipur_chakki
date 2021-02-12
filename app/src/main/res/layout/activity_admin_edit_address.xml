@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminEditAddress">
+
+    <ScrollView
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                >
+
+                <EditText
+                    android:id="@+id/name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#00ffffff"
+
+
+                    android:hint="Enter Your Name"
+                    android:inputType="text"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_marginHorizontal="8dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/number_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="mobile number"
+                    android:inputType="phone"
+                    android:backgroundTint="#00ffffff"
+
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/whats_app_no_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="WhatsApp number"
+                    android:inputType="number"
+                    android:backgroundTint="#00ffffff"
+
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout8"
+
+
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/address_details_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Details"
+                    android:inputType="textMultiLine"
+                    android:backgroundTint="#00ffffff"
+
+                    android:textColor="#000" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="ADDRESS TYPE"
+                android:textSize="16dp" />
+
+
+            <CheckBox
+                android:id="@+id/address_type_Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#DF4444"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Home Adderss" />
+
+            <CheckBox
+                android:id="@+id/address_type_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#DF4444"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Work/Office Adderss" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_address_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_background"
+                android:text="Save Address" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
